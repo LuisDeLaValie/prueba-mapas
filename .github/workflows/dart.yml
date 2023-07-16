@@ -67,6 +67,9 @@ jobs:
         with:
           name: apk-artifact
           path: build/app/outputs/flutter-apk/app-release.apk
+          
+      - name: Display structure of downloaded files
+        run: ls -R
       
       - name: Crear versión de lanzamiento
         id: create_release
